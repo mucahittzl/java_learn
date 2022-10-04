@@ -43,7 +43,7 @@ if(seçim.equals("D")){
 		int dikdörtgenuzunluk= sc.nextInt();
 		System.out.println("dikdörtgen genıslık giriniz");
 		int dikdörtgengenişlik=sc.nextInt();
-	System.out.println("dikdörtgenalan"+ dikdörtgenuzunluk * dikdörtgengenişlik);
+	System.out.println("dikdörtgenalan:"+ dikdörtgenuzunluk * dikdörtgengenişlik);
 	System.out.println("dikdörtgençevre:" +(dikdörtgenuzunluk + dikdörtgengenişlik) * 2);}
 if(seçim.equals("Ü")){
 Scanner sc=new Scanner(System.in);

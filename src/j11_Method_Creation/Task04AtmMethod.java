@@ -26,6 +26,8 @@ public class Task04AtmMethod {
                 break;
             default:
                 System.out.println("doğru seçim yap");
+                secim();
+
         }
 
 

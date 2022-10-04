@@ -1,4 +1,4 @@
-package TekrarDersleri;
+package TekrarDersleri.StrinmanipulationDenemeler;
 
 import java.util.Scanner;
 

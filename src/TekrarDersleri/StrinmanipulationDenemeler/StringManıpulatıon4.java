@@ -1,4 +1,4 @@
-package TekrarDersleri;
+package TekrarDersleri.StrinmanipulationDenemeler;
 
 public class StringManıpulatıon4 {
     public static void main(String[] args) {
