@@ -20,17 +20,5 @@ public class deneme2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
