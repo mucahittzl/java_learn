@@ -17,24 +17,30 @@ public class Task01 {
 */
 
 
-        Scanner sc=new Scanner(System.in);
-        System.out.println("100 den kucuk tamsayı giriniz:");
-        int sayı= sc.nextInt();
-
-    for (int i=1;i<sayı;i++){
-        if (i%3==0&&i%5==0){//girilen sayının 3 e ve 5 e bolunme kontrolu
-            System.out.println("java candır");
-        } else if (i%3==0) {//girilen sayının 3 e bolunme kontrolu
-            System.out.println("java");
-        }else if (i%5==0){//girilen sayının 5 e bolunme kontrolu
-            System.out.println("candır");
-        }else System.out.println("dogru deger gırınız");
-    }
+        Scanner sc= new Scanner(System.in);
+        System.out.println("bir pozitif tam sayı giriniz : ");
+        int sayı=sc.nextInt();//63-> 1,2,3,  .. 63->
 
 
+        if (sayı>=100){//girilen sayı 100 den kucuk olma sartı
+            System.out.println("agam hani 100 den kuçuk girecktin :( ");
+        }else {
+            for (int i = 1; i < sayı; i++) {
+
+                if (i % 3 == 0 && i % 5 == 0) {//girilen sayıya kadar 3 ve 5 e bölünme kontrolu
+                    System.out.println("JavaCAN");
+
+                } else if (i % 3 == 0) {//girilen sayıya kadar 3 e bölünme kontrolu
+                    System.out.println("Java");
+
+                } else if (i % 5 == 0) {//girilen sayıya kadar 5 e bölünme kontrolu
+                    System.out.println("CAN'dır");
+
+                } else System.out.println(i + " hicbir şartı sağlamayan sayı");
 
 
+            }
 
-
-    }
+        }
+            }
 }
