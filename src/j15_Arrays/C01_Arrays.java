@@ -80,6 +80,16 @@ Array'de primitive datalar veya non-primitive datalarin referanslari store edile
         }
         System.out.println("Arrays.toString(yeniARR) = " + Arrays.toString(yeniARR)); // boyutu 5 olan değerleri yazar araya null atar
 
+        //Array elemanları naturel(k->b:ascending b->:descending,alfabetik) sıralama
+        System.out.println(Arrays.toString(isimArray)); // sıralama öncesi->[muharrem, enise, cebrail, nazım, özge]
+        Arrays.sort(isimArray); // isimarray elemanları naturel sıralanır
+        System.out.println(Arrays.toString(isimArray)); // sıralama sonrası-> [QA özge, cebrail, enise, muharrem, nazım]
+
+
+
+
+
+
 
     }
 }

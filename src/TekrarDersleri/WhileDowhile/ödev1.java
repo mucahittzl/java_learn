@@ -15,7 +15,8 @@ public class ödev1 {
         String ifade=sc.nextLine();
 
         for (int i = 0; i <ifade.length() ; i++) {
-            System.out.println(ifade);
+            if (ifade.charAt(i)=='a'||ifade.charAt(i)==' ')continue;
+            System.out.println(ifade.charAt(i));
         }
 }
 
