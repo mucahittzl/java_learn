@@ -21,7 +21,10 @@ public class Task10 {
         System.out.println(Arrays.toString(arr));
 
 
-
+        for (int a:arr){
+          a=a*-1;
+             System.out.print(" " + a);
+}
 
 
 

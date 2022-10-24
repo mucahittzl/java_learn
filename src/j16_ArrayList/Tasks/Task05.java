@@ -32,6 +32,7 @@ public class Task05 {
 
         Collections.sort(isimList);//isimList maturel sıralandı
         System.out.println("isimList = " + isimList);//sıralama sonrası ->[Ali, Ayse, Can, Hasan, Suzan, Veli]
-        return isimList;
+    return isimList;
     }
+
 }

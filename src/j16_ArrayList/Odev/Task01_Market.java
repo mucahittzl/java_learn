@@ -1,11 +1,11 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Odev;
 
+import java.awt.geom.RoundRectangle2D;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
-public class Task01_Bakkal {
+public class Task01_Market {
     /* TASK :
      * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
      * Ayrıca bakkalın bu hafta ortalama kazandığı miktarı gösteren bir method yazınız.
@@ -22,9 +22,7 @@ public class Task01_Bakkal {
      * 6. Adım : getOrtalamaninAltindaKazancGünleri() adlı method oluşturun.
      * 			 for döngüsü ile tüm günleri ortalama kazanç ile karşılaştır
      * 			 ortalama kazançtan aşağıysa o günleri return yap.
-     */
-
-
+     * */
 
     static ArrayList<String> gunler = new ArrayList<>(Arrays.asList("p.tesi", "salı", "carşamba", "perşembe", "cuma", "c.tesi", "pazar"));//1. adım
     static ArrayList<Double> gunlukKazanclar = new ArrayList<>();//2.adım
