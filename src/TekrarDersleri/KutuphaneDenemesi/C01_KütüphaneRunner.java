@@ -1,4 +1,6 @@
-package TekrarDersleri;
+package TekrarDersleri.KutuphaneDenemesi;
+
+import TekrarDersleri.KutuphaneDenemesi.C01_Kutuphane;
 
 public class C01_KütüphaneRunner {
     public static void main(String[] args) {

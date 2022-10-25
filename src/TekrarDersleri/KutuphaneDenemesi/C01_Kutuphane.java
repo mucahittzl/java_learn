@@ -1,4 +1,4 @@
-package TekrarDersleri;
+package TekrarDersleri.KutuphaneDenemesi;
 
 public class C01_Kutuphane {
 
