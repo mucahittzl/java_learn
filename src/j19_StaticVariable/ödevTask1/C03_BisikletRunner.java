@@ -17,7 +17,8 @@ public class C03_BisikletRunner {
     public static void main(String[] args) {
 
 
-
+    C03_Bisiklet surucu1 =new C03_Bisiklet(12,5);
+    surucu1.menu();
 
 
 
