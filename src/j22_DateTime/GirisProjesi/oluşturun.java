@@ -1,4 +1,4 @@
-package j22_DateTime.TASK;
+package j22_DateTime.GirisProjesi;
   /* TASK - >
 Bu uygulama kulanıcıların bir ArrayListe kayıt zamanını da alarak
 ekleyen ve sonrasında her dakikanın ilk 10 saniyesinde kaydolanları

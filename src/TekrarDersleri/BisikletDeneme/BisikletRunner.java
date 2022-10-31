@@ -13,18 +13,7 @@ public class BisikletRunner {
     Trick -> Kullanıcıya metodlarla iligli bir menü veriniz.
      */
 
-
-
-
-
-
-
-
-
-
-
-
-
+        Bisiklet.menu();
 
 
     }

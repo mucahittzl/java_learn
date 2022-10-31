@@ -3,13 +3,13 @@ package TekrarDersleri.BisikletDeneme;
 import java.util.Scanner;
 
 public class Bisiklet {
-    Scanner scan = new Scanner(System.in);
+   static Scanner scan = new Scanner(System.in);
 
     int hız;
     int vites;
     static int seçim;
 
-  public void   menu() {
+  public static void   menu() {
 
       do {
           System.out.println("Lütfen islem seciniz: \n" +
@@ -20,6 +20,10 @@ public class Bisiklet {
                   "5 : Cikmak icin 5 e basin");
           int seçim= scan.nextInt();
           switch (seçim) {
+              case 1:
+
+                break;
+              case 2:
 
 
 
@@ -29,12 +33,18 @@ public class Bisiklet {
 
       }
 
-    private void vitesAzalt() {
+    private  void vitesAzalt() {
       vites--;
     }
-
-
-
-
+public void vitesArttır(){
+      vites++;
+}
+public void durum(){
+    System.out.println("hızınız:"+hız+"ve"+"vitesiniz:"+vites);
+}
+public void hizDegistir(){
+      int yeniHız;
+      yeniHız= scan.nextInt();
+}
 
 }

@@ -27,7 +27,7 @@ public class C03_PassByValue {
     }
 
     public static void listUpdate2(List<Integer>list1){
-        for (int i = 0; i <list1.size() ; i++) {
+        for(int i = 0; i <list1.size() ; i++) {
             list1.set(i, list1.get(i)*2);
 
         }System.out.println("list1 = " + list1);

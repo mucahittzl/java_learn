@@ -1,6 +1,9 @@
 package j22_DateTime;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.Locale;
 
 public class C02_LocalTime {
@@ -29,5 +32,6 @@ public class C02_LocalTime {
         LocalTime forSonu=LocalTime.now();
         System.out.println("forBası = " + forSonu.getNano());
         System.out.println("forSonu.getNano()-forBası.getNano() = " + (forSonu.getNano()-forBası.getNano()));
+       
     }
 }
