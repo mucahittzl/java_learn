@@ -42,5 +42,5 @@ public class C01_AccessModifier {
         System.out.println("protectedMethod'dan agaya selam");
     }
 
-    C01_AccessModifier obj3=new C01_AccessModifier();//PRİVATE CONS CALL EDİLDİ KENDİ CLASSINDA OLDUGU İÇİN
+    //C01_AccessModifier obj3=new C01_AccessModifier();//PRİVATE CONS CALL EDİLDİ KENDİ CLASSINDA OLDUGU İÇİN
 }
