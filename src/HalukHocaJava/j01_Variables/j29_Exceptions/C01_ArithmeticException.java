@@ -19,7 +19,7 @@ public class C01_ArithmeticException {
 
         try {//dene-> hatanın olma ihitmali oldugu code block
             /*
-            1- try-catch kullanıldıgında try block hatasız çalışırsa catch block asla çalışmazçcatch block try block exception hat yakalarsa calışır
+            1- try-catch kullanıldıgında try block hatasız çalışırsa catch block asla çalışmaz catch block try block exception hat yakalarsa calışır
             2- try block catch veya finally block olmadan CTE verir. try block'tan sonra birden fazla catch block tanımlanabilir.
                aynıa anda  sadece bir catch block çalışabilir hiç bir catch block çalışmaya da bilir
             3-Parent-child ilişkisi olan catch'larda child önce yazılmalıdır.Aksi halde CTE verir
