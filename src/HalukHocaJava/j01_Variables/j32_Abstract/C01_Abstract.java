@@ -21,7 +21,7 @@ public class C01_Abstract {
     6- Bir concerete child class parent abs class extend ettiğnde abs method'ları implement etnek zorunda
         ama concerete methodlar isteğe göre override edilir.
     7- Parent child ilşkisi olan abstarct class'lar abs method'ları implement etmek zorunda değil
-    8- Parent olan abs class birden çok concerete  veya abs child class exyends edibilir.
+    8- Parent olan abs class birden çok concerete  veya abs child class extends edibilir.
         ancak child class birden cok abs parent class'dan extends e-de-mezz...
 
     9-  Abs Class'da final ve abs method tanımlanamaz CTE -> final method override edilemyecegi için abs olamaz

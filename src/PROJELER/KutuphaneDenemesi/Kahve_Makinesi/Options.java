@@ -3,7 +3,8 @@ package PROJELER.KutuphaneDenemesi.Kahve_Makinesi;
 import java.util.Scanner;
 
 public class Options {
-    // ***
+
+            // ***
     /*
     Urun urun = new Urun();
 
@@ -19,7 +20,7 @@ public class Options {
 
      */
 
-    public double select(Urun urun) {
+    public double select(Urun urun){
 
         System.out.println(urun.toString());//Kullanıcıya urunleri gösterdim...
         Scanner scanner = new Scanner(System.in);
@@ -29,11 +30,11 @@ public class Options {
             System.out.println("Lütfen 1 ile 7 arasında bir rakam girerek almak istediğiniz ürünü seçiniz...");
             System.out.println("Cıkıs için '0' ");
             urun.setProductNum(scanner.nextInt());
-            if (urun.getProductNum() < 0 || urun.getProductNum() > 7) {
+            if (urun.getProductNum()<0 || urun.getProductNum()>7){
                 System.out.println("Lütfen belirtilen aralıkta bir rakam giriniz...");
             }
 
-        } while (urun.getProductNum() < 0 || urun.getProductNum() > 7);
+        }while (urun.getProductNum()<0 || urun.getProductNum()>7);
 /*
 kraker=2.5;
 cips=2.2;
@@ -45,10 +46,11 @@ filtreKahve=1.99;
 productNum;
 price;
  */
-        switch (urun.getProductNum()) {
+        switch (urun.getProductNum()){
 
             case 0:
                 System.out.println("Yine Bekleriz...");
+                System.exit(0);
                 break;
             case 1:
                 urun.setPrice(urun.getKraker());
@@ -76,19 +78,34 @@ price;
         return urun.getPrice();
     }
 
-    public double balance(double price, double accountBalance, Urun urun) {
-        double fonlama;
+    public double balance(double price, double accountBalance, Urun urun){
 
-        while (accountBalance < price) {
+        double fonlama;
+/*
+        try{
+            System.out.println("Hellooooo....."); //RTE --> run time error ....
+        }
+
+
+///handle
+
+        catch (Exception e){
+            System.out.println("Catchhhh.....");
+        }
+
+ */
+
+
+        while (accountBalance<price){
             Scanner scanner = new Scanner(System.in);
             System.out.println("Yeterli bakiyeniz bulunmamaktadır... Ekleme Yapmak istiyor musunuz (Y/N)");
             char confirm = scanner.next().toLowerCase().charAt(0);
 
-            if (confirm == 'n') {
+            if (confirm == 'n'){
                 System.out.println("Mevcut Bakiyeniz: " + accountBalance);
                 System.out.println("Yine Bekleriz...");
                 break;
-            } else {
+            }else {
                 System.out.println("Ne kadar ekleme yapmak istiyorsunuz...");
                 fonlama = scanner.nextDouble();
                 accountBalance = accountBalance + fonlama;
@@ -97,6 +114,29 @@ price;
             }
 
         }
-        return accountBalance; //Hata vermemesi için şu anlık yazılmıuş bir veridir....
+        return accountBalance;
     }
+
+
+    public void purchase(double price, double accoutBalance, Urun urun){
+
+        while (accoutBalance>=price){
+
+            accoutBalance = accoutBalance - price;
+            System.out.println("Kalan Bakiye: " + accoutBalance);
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Başka bir ürün almak istiyor musunuz? (Y/N)");
+            char confirm = scanner.next().toLowerCase().charAt(0);
+
+            if (confirm == 'n'){
+                System.out.println("Yine Bekleriz....");
+                break;
+            }else {
+                urun.setPrice(select(urun));
+                accoutBalance = balance(urun.getPrice(),accoutBalance,urun);
+            }
+        }
+    }
+
 }
