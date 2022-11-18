@@ -14,6 +14,7 @@ public class Runner {
         araclar.add(bus1);
         araclar.add(toyota);
         araclar.add(tesla1);
+        System.out.println(toyota.getClass().getSimpleName());
         for (Vehicle a:araclar) {
             System.out.println(a.engine);
             System.out.println(a.model);
