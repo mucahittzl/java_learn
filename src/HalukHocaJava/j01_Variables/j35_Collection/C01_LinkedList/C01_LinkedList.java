@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class C01_LinkedList {
+public class
+C01_LinkedList {
     public static void main(String[] args) {
 
 

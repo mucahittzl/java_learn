@@ -63,6 +63,8 @@ New
      */
     public static void main(String[] args) {
 
+            Store claruswayStore = new Store();
+            claruswayStore.run();
 
     }
 }
