@@ -40,5 +40,7 @@ public class C12_HashTable {
         System.out.println("ht = " + ht);
         System.out.println("ht1 = " + ht1);
 
+        
+
     }
 }

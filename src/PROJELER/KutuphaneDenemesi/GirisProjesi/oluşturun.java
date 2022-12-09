@@ -1,4 +1,4 @@
-package HalukHocaJava.j01_Variables.j22_DateTime.GirisProjesi;
+package PROJELER.KutuphaneDenemesi.GirisProjesi;
   /* TASK - >
 Bu uygulama kulanıcıların bir ArrayListe kayıt zamanını da alarak
 ekleyen ve sonrasında her dakikanın ilk 10 saniyesinde kaydolanları

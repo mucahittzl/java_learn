@@ -1,6 +1,8 @@
 package HalukHocaJava.j01_Variables.j36_Map;
 
+import java.util.EnumSet;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class C01_HashMap {
     public static void main(String[] args) {

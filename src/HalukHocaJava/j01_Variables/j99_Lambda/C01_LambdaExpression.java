@@ -59,6 +59,7 @@ public class C01_LambdaExpression {
         printElFunctional2( sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
 
 
+
     }//main sonu
 
         //Task : "Structured Programming":Amele code kullanarak list elemanlarını aynı satirda aralarında bosluk olacak sekilde print ediniz.
@@ -109,6 +110,9 @@ public class C01_LambdaExpression {
     }
 
     public static void yazdir(int a) {//normal allahın mmethodu tek aksiyonlu->seed method(tohum)->refere edilecek method
+        System.out.print(a + " ");
+    }
+    public static void yazdirString(String a) {//normal allahın mmethodu tek aksiyonlu->seed method(tohum)->refere edilecek method
         System.out.print(a + " ");
     }
 

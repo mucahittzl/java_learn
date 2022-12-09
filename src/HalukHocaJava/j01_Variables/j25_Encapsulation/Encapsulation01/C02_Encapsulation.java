@@ -7,6 +7,7 @@ public class C02_Encapsulation {
     // int id = 1001;
     public C02_Encapsulation() {
     }
+
     public C02_Encapsulation(String name, int id) {
         this.name = name;
         this.id = id;
@@ -35,4 +36,12 @@ public class C02_Encapsulation {
     //             "name='" + name + '\'' +
     //                     ", id=" + id;
     // }
+
+    @Override
+    public String toString() {
+        return "C02_Encapsulation{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }

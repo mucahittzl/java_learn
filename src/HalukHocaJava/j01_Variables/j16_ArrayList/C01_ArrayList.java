@@ -77,5 +77,7 @@ public class C01_ArrayList {
         ArrayList<String>listUlke=new ArrayList<>(List.of("Almanya","Amerika","ingiltere","iscev"));//
         ListSayi.add(2,14);// listde index 2'ye 14 değeri eklendi 2. indexteki eski eleman 1 index ileri kaydırıldı
         System.out.println("sayiList = " + ListSayi); //[10, 72, 14, 61, 41, 41]
+
+
     }
 }

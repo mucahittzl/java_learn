@@ -30,7 +30,8 @@ package HalukHocaJava.j01_Variables.j25_Encapsulation.Encapsulation01;
    5) Kullanicinin kullandigi sistem arkasindaki karmasik yapiyi kullaniciya gosterilmez.
 
  */
-public class C01_Encapsulation {
+public class
+C01_Encapsulation {
 
     public static void main(String[] args) {
 

@@ -1,5 +1,6 @@
 package HalukHocaJava.j01_Variables.j35_Collection.C01_LinkedList;
 
+import java.io.File;
 import java.util.LinkedList;
 
 public class C02_LinkedList {

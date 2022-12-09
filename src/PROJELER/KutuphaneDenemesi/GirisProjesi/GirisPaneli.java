@@ -1,4 +1,4 @@
-package HalukHocaJava.j01_Variables.j22_DateTime.GirisProjesi;
+package PROJELER.KutuphaneDenemesi.GirisProjesi;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -8,8 +8,8 @@ import java.util.List;
 public class C06_distinct {
     public static void main(String[] args) {
 
-        // List<String> menu = new ArrayList<String>(Arrays.asList("küşleme", "küşleme", "küşleme", "soğanlı", "soğanlı", "soğanlı", "trileçe", "bicibici", "büryan", "melemen", "cacix", "kokerç", "yağlama", "güveç", "arabAşı", "tantuni"));
-        List<String> menu = new ArrayList<String>(Arrays.asList(  "bicibici", "melemen", "cacix", "kokerec"));
+         List<String> menu = new ArrayList<String>(Arrays.asList("küşleme", "küşleme", "küşleme", "soğanlı", "soğanlı", "soğanlı", "trileçe", "bicibici", "büryan", "melemen", "cacix", "kokerç", "yağlama", "güveç", "arabAşı", "tantuni"));
+       // List<String> menu = new ArrayList<String>(Arrays.asList(  "bicibici", "melemen", "cacix", "kokerec"));
 
         alfBkTkszPrint(menu);//ARABAŞI BÜRYAN BİCİBİCİ CACİX GÜVEÇ KOKERÇ KÜŞLEME MELEMEN SOĞANLI TANTUNİ TRİLEÇE YAĞLAMA
         System.out.println("\n   ***   ");
@@ -19,6 +19,7 @@ public class C06_distinct {
         System.out.println("\n   ***   ");
         sonHrfTrsPrint( menu);//
         System.out.println("\n   ***   ");
+        charKaresiCiftElSirala(menu);
         System.out.println("\n   ***   ");
 
 
@@ -70,6 +71,15 @@ public class C06_distinct {
                 forEach(t-> System.out.print(t+" "));
     }
     // Task : listin elemanlarin karakterlerinin cift sayili  karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
+    public static void charKaresiCiftElSirala(List<String> menu) {
+        menu.
+                stream().//akısa alndı
+                map(t -> t.length() * t.length()).//akısdaki string elemanları boyutlarının karesine update edildi
+                filter(C01_LambdaExpression::ciftMi).//cift elelmalar filtrelendi
+                distinct().//tekrarsız yapıldı
+                sorted(Comparator.reverseOrder()).//ters b->k sıra yapıldı
+                forEach(C01_LambdaExpression::yazdir);// print edildi
+    }
 }
 
 

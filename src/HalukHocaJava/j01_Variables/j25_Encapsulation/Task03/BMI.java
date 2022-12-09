@@ -18,6 +18,7 @@ public class BMI {
                 this.height = height;
             }
 
+
             public double getBMI(){
               double  bmi=weight/(height*height);
                 return bmi;
@@ -65,6 +66,17 @@ public class BMI {
             public void setHeight(double height) {
                 this.height = height;
             }
+
+
+          //  @Override
+         //  public String toString() {
+         //      return "BMI{" +
+         //              "name='" + name + '\'' +
+         //              ", age=" + age +
+         //              ", weight=" + weight +
+         //              ", height=" + height +
+         //              '}';
+         //  }
         }
 
 
@@ -74,11 +86,6 @@ class Runner{//inner class
 
     BMI obj=new BMI("muharrem",46,54,1.63);
         System.out.println("BMI :"+obj.getName()+" "+obj.getSrtatus()+" "+obj.getBMI());
-
-
-
-
-
 
 
 

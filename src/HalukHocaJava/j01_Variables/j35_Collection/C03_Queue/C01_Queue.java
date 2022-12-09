@@ -5,7 +5,8 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class C01_Queue {
+public class
+C01_Queue {
     public static void main(String[] args) {
 
         /*

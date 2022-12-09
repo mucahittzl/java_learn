@@ -1,5 +1,7 @@
 package HalukHocaJava.j01_Variables.j25_Encapsulation.Encapsulation03;
 
+import HalukHocaJava.j01_Variables.j25_Encapsulation.Task03.BMI;
+
 public class Runner {// 3. step
     public static void main(String[] args) {
 
@@ -15,6 +17,8 @@ public class Runner {// 3. step
         System.out.println("honda hayat onda :"+honda);
         System.out.println("hacimurat :"+hacimurat);
         System.out.println("volvo :"+volvo);
+
+
     }
 }
 

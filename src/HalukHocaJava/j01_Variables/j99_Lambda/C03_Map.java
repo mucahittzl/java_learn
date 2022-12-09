@@ -45,5 +45,7 @@ public class C03_Map {
                 filter(C01_LambdaExpression::ciftMi).
                 map(t->(int)Math.sqrt(t)).
                 forEach(C01_LambdaExpression::yazdir);
+
+
     }
 }
